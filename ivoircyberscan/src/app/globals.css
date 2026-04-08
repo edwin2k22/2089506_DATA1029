@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 245, 245, 245;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Couleurs Côte d'Ivoire */
+.ci-orange {
+  color: #FF8200;
+}
+.ci-orange-bg {
+  background-color: #FF8200;
+}
+.ci-green {
+  color: #00A651;
+}
+.ci-green-bg {
+  background-color: #00A651;
+}
+.ci-white {
+  color: #FFFFFF;
+}
+.ci-white-bg {
+  background-color: #FFFFFF;
+}
