@@ -1,0 +1,44 @@
+# Requirements for Soccer Analytics Platform
+
+# Core dependencies
+soccerdata>=1.6.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL driver
+alembic>=1.12.0  # Database migrations
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# HTTP & Scraping support
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Selenium (for WhoScored and other JS-heavy sources)
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0  # Retry logic
+structlog>=23.2.0  # Structured logging
+click>=8.1.0  # CLI
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+httpx>=0.25.0  # For API testing
+
+# Optional: Data validation
+great-expectations>=0.18.0
+
+# Optional: Scheduling
+apscheduler>=3.10.0
